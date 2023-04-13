@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd28d16d38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Based <br>Full Stack Developer</p>
+            <h1>Hi,I am</hi><span> Piyush</span><br>From JSSATE </h1>
+            
+        </div>
+        </div>
+    </div>
+<!-----------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="discription">
+                        I am a student at JSSATE Noida sec-62 , who is currenty in the 7th semester of his B.Tech Degree and who is motivated to learn and 
+                        navigate through high-stess situations and achieve goals on time and under budget.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Java Developer:</span><br>Developing Java apps and softwares</li>
+                            <li><span>Front-end:</span><br>Familiar with web development(JS,CSS,HTML)</li>
+                            <li><span>Back-end:</span><br>(Spring MVC,rest API)</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Projects">
+                        <ul>
+                            <li><span>INDICART:</span><br>A full stack web application with user login authentication and admin authentication<br></li>
+                            <li><span>Snake Game</span><br>Java based classic Snake game which shows your current score</li>
+                            <li><span>Portfolio Website</span><br>A html css javascript based website which is highly interactive and attractive as well.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>10th Grade</span><br>Father Agnel School Noida<br>Passed in 2017 with 9 cgpa</li>
+                            <li><span>12th Grade</span><br>Father Agnel School Noida<br>Passed in 2019 with 76%</li>
+                            <li><span>B.tech(UG Degree)</span><br>JSS Academy of Technical Education<br>Currently in 7th sem with no backlogs and 77%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------services--------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Problem Solving</h2>
+                <p>
+                    I have keen interest in solving DSA problems on leetcode,codechef,geekforgeeks
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2> Web design</h2>
+                <p>
+                    Designing web pages and websites using html, css, JavaScript
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-satellite-dish"></i>
+                <h2>Back-end Development</h2>
+                <p>
+                    Designing Back-end using SpringBoot
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------portfolio--------------------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Indicart-Full Stack Web App</h3>
+                    <p>Connects you with your culture and brings you the indian made goods that never get their lime light.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>Classic Snake Game of the 90s
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Brings you my portfolio that I self designed and implemented
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+ <!------------------contact------------------------------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>piyush.dasilawork@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9711126274</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/piyush.dasila.3/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/piyushdasila/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.codechef.com/users/piyushdasila"><i class="fa- fa-brands hat-chef"></i></a>
+                    
+
+                </div>
+                <a href="images/Piyush_Dasila_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright@PiyushDasila</p>
+
+    </div>
+ </div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFLAO2niBDsxf4cDGCdBDhbuMpf9ABdeUGvpB-lHegyG7jyJ2OQZ7AB2O5b9uy1QTNtQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+           msg.innerHTML="Message sent successfully"
+           setTimeout(function(){
+            msg.innerHTML=""
+           },2500)
+           form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+</body>
+</html>
